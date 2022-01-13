@@ -6,23 +6,31 @@ Run the commands:
 
 ```bash
 npx create-next-app -e https://github.com/kinolanka/next-starter
+npm run prepare
 git add .husky/pre-commit
 ```
 
 ## Features
 
-- TypeScript
-- MUI
-- Absolute imports
-- Root in src
-- Husky
-- clsx
+- Core
+    - [TypeScript](https://github.com/microsoft/TypeScript)
+    - [MUI](https://github.com/mui-org/material-ui)
+- Setup
+    - [Absolute imports](https://nextjs.org/docs/advanced-features/module-path-aliases)
+    - ["src" Directory](https://nextjs.org/docs/advanced-features/src-directory)
+- Code quality tools
+  - [husky](https://github.com/typicode/husky)
+  - [lint-staged](https://github.com/okonet/lint-staged)
+  - [ESlint](https://github.com/eslint/eslint)
+  - [Prettier](https://github.com/prettier/prettier)
+  - [import-sort](https://github.com/renke/import-sort)
+- Additional packages
+  - [clsx](https://github.com/lukeed/clsx)
 
 ### Next features
 
 - REST API
-- Prettier
-- Sort imports
+- css lint
 - Redux Toolkit
 - Redux Persist
 - Mongoose
