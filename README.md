@@ -13,6 +13,7 @@ npx create-next-app -e https://github.com/kinolanka/next-starter
 - TypeScript
 - MUI
 - Absolute imports
+- Root in src
 
 ### Next features
 
@@ -21,7 +22,6 @@ npx create-next-app -e https://github.com/kinolanka/next-starter
 - Redux Toolkit
 - Mongoose
 - REST API
-- Root in src
 - React Hook Form
 ## Learn More
 
