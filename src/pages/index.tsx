@@ -1,10 +1,10 @@
-import type { NextPage } from 'next';
-import Container from '@mui/material/Container';
-import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
-import Link from 'src/utils/Link';
-import ProTip from 'src/utils/ProTip';
+import Container from '@mui/material/Container';
 import Copyright from 'src/utils/Copyright';
+import Link from 'src/utils/Link';
+import type { NextPage } from 'next';
+import ProTip from 'src/utils/ProTip';
+import Typography from '@mui/material/Typography';
 
 const Home: NextPage = () => {
   return (
