@@ -12,16 +12,17 @@ npx create-next-app -e https://github.com/kinolanka/next-starter
 
 - TypeScript
 - MUI
+- Absolute imports
 
 ### Next features
 
+- Prettier
 - Sort imports
-- Absolute pathes
 - Redux Toolkit
 - Mongoose
 - REST API
 - Root in src
-
+- React Hook Form
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
