@@ -1,5 +1,9 @@
 This is a [Next.js](https://nextjs.org/) starter project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## Demo
+
+[next-starter.kinolanka.com](next-starter.kinolanka.com)
+
 ## Getting Started
 
 Run the commands:
@@ -66,11 +70,19 @@ git add .husky/pre-commit
 
 [Vercel System Environment Variables](https://vercel.com/docs/concepts/projects/environment-variables#system-environment-variables)
 
+## Deployment
+
+This starter template is configured for Vercel.
+
+### Setup
+
+- Add custom domain for **production** branch
+- Set SITE_URL variable for **production** environment
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-- [Next.js Examples](https://github.com/vercel/next.js/tree/canary/examples)
+- [https://nextjs.org/docs](https://nextjs.org/docs)
+- [https://github.com/vercel/next.js/tree/canary/examples](https://github.com/vercel/next.js/tree/canary/examples)
+- [https://vercel.com/docs](https://vercel.com/docs)

@@ -3,7 +3,7 @@
 
 // default config for vercel production deployment
 const config = {
-  siteUrl: `https://${process.env.VERCEL_URL}`,
+  siteUrl: process.env.SITE_URL, // vercel custom var
   generateRobotsTxt: true,
   robotsTxtOptions: {
     policies: [
@@ -17,6 +17,7 @@ const config = {
 
 // vercel non production deployment
 if (process.env.VERCEL_ENV !== 'production') {
+  config.siteUrl = `https://${process.env.VERCEL_URL}`; // vercel system var
   config.robotsTxtOptions = {
     policies: [
       {
@@ -25,11 +26,6 @@ if (process.env.VERCEL_ENV !== 'production') {
       }
     ]
   };
-}
-
-// localhost
-if (process.env.VERCEL !== '1') {
-  config.siteUrl = `http://${process.env.VERCEL_URL}`;
 }
 
 module.exports = config;
