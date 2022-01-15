@@ -6,6 +6,7 @@ Run the commands:
 
 ```bash
 npx create-next-app -e https://github.com/kinolanka/next-starter
+cp .env.local.example .env.local
 npm run prepare
 git add .husky/pre-commit
 ```
@@ -13,11 +14,12 @@ git add .husky/pre-commit
 ## Features
 
 - Core
-    - [TypeScript](https://github.com/microsoft/TypeScript)
-    - [MUI](https://github.com/mui-org/material-ui)
+  - [TypeScript](https://github.com/microsoft/TypeScript)
+  - [MUI](https://github.com/mui-org/material-ui)
 - Setup
-    - [Absolute imports](https://nextjs.org/docs/advanced-features/module-path-aliases)
-    - ["src" Directory](https://nextjs.org/docs/advanced-features/src-directory)
+  - [Absolute imports](https://nextjs.org/docs/advanced-features/module-path-aliases)
+  - ["src" Directory](https://nextjs.org/docs/advanced-features/src-directory)
+- SEO -[next-sitemap](https://github.com/iamvishnusankar/next-sitemap)
 - Code quality tools
   - [husky](https://github.com/typicode/husky)
   - [lint-staged](https://github.com/okonet/lint-staged)
@@ -42,9 +44,27 @@ git add .husky/pre-commit
 - lodash
 - axios
 - date-fns
-- sitemap
-- robot.txt
 - joi
+- env files
+- Lighthouse
+- vercel: logs integration
+
+## Environments
+
+- Localhost
+  - **production** - `next build`
+  - **development** - `next dev`
+- Vercel
+  - **production** - production brunch
+  - **preview** - not production branches
+
+(!) Set all environment variables for Vercel in Vercel project settings and for localhost in env.local
+
+### Docs
+
+[Next.js Environment Variables](https://nextjs.org/docs/basic-features/environment-variables)
+
+[Vercel System Environment Variables](https://vercel.com/docs/concepts/projects/environment-variables#system-environment-variables)
 
 ## Learn More
 
