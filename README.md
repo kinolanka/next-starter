@@ -23,6 +23,7 @@ git add .husky/pre-commit
 - Setup
   - [Absolute imports](https://nextjs.org/docs/advanced-features/module-path-aliases)
   - ["src" Directory](https://nextjs.org/docs/advanced-features/src-directory)
+  - .env files
 - SEO -[next-sitemap](https://github.com/iamvishnusankar/next-sitemap)
 - Code quality tools
   - [husky](https://github.com/typicode/husky)
@@ -49,9 +50,10 @@ git add .husky/pre-commit
 - axios
 - date-fns
 - joi
-- env files
 - Lighthouse
 - vercel: logs integration
+- security headers
+- microdata
 
 ## Environments
 
@@ -78,6 +80,7 @@ This starter template is configured for Vercel.
 
 - Add custom domain for **production** branch
 - Set SITE_URL variable for **production** environment
+- Check that [system environment variables](https://vercel.com/kinolanka/next-starter/settings/environment-variables#:~:text=Automatically%20expose,System%20Environment%20Variables) are automatically exposed
 
 ## Learn More
 
