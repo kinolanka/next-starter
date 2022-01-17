@@ -23,7 +23,7 @@ git add .husky/pre-commit
 - Setup
   - [Absolute imports](https://nextjs.org/docs/advanced-features/module-path-aliases)
   - ["src" Directory](https://nextjs.org/docs/advanced-features/src-directory)
-  - .env files
+  - [Environment Variables](https://nextjs.org/docs/basic-features/environment-variables)
 - SEO -[next-sitemap](https://github.com/iamvishnusankar/next-sitemap)
 - Code quality tools
   - [husky](https://github.com/typicode/husky)
@@ -31,6 +31,9 @@ git add .husky/pre-commit
   - [ESlint](https://github.com/eslint/eslint)
   - [Prettier](https://github.com/prettier/prettier)
   - [import-sort](https://github.com/renke/import-sort)
+- Tests
+  - [Jest](https://github.com/facebook/jest)
+  - [React Testing Library](https://github.com/testing-library/react-testing-library)
 - Additional packages
   - [clsx](https://github.com/lukeed/clsx)
 
@@ -45,7 +48,6 @@ git add .husky/pre-commit
 - next-auth
 - googleapis
 - Gooogle Recaptcha
-- Jest + React Testing Library
 - lodash
 - axios
 - date-fns
