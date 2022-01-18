@@ -2,7 +2,7 @@ This is a [Next.js](https://nextjs.org/) starter project bootstrapped with [`cre
 
 ## Demo
 
-[next-starter.kinolanka.com](next-starter.kinolanka.com)
+[https://next-starter.kinolanka.com](https://next-starter.kinolanka.com)
 
 ## Getting Started
 
