@@ -2,7 +2,7 @@ This is a [Next.js](https://nextjs.org/) starter project bootstrapped with [`cre
 
 ## Demo
 
-[next-starter.kinolanka.com](next-starter.kinolanka.com)
+[https://next-starter.kinolanka.com](https://next-starter.kinolanka.com)
 
 ## Getting Started
 
@@ -23,6 +23,8 @@ git add .husky/pre-commit
 - Setup
   - [Absolute imports](https://nextjs.org/docs/advanced-features/module-path-aliases)
   - ["src" Directory](https://nextjs.org/docs/advanced-features/src-directory)
+  - [Environment Variables](https://nextjs.org/docs/basic-features/environment-variables)
+  - [Custom error pages](https://nextjs.org/docs/advanced-features/custom-error-page)
 - SEO -[next-sitemap](https://github.com/iamvishnusankar/next-sitemap)
 - Code quality tools
   - [husky](https://github.com/typicode/husky)
@@ -30,6 +32,9 @@ git add .husky/pre-commit
   - [ESlint](https://github.com/eslint/eslint)
   - [Prettier](https://github.com/prettier/prettier)
   - [import-sort](https://github.com/renke/import-sort)
+- Tests
+  - [Jest](https://github.com/facebook/jest)
+  - [React Testing Library](https://github.com/testing-library/react-testing-library)
 - Additional packages
   - [clsx](https://github.com/lukeed/clsx)
 
@@ -44,14 +49,14 @@ git add .husky/pre-commit
 - next-auth
 - googleapis
 - Gooogle Recaptcha
-- Jest + React Testing Library
 - lodash
 - axios
 - date-fns
 - joi
-- env files
 - Lighthouse
 - vercel: logs integration
+- security headers
+- microdata
 
 ## Environments
 
@@ -78,6 +83,7 @@ This starter template is configured for Vercel.
 
 - Add custom domain for **production** branch
 - Set SITE_URL variable for **production** environment
+- Check that [system environment variables](https://vercel.com/kinolanka/next-starter/settings/environment-variables#:~:text=Automatically%20expose,System%20Environment%20Variables) are automatically exposed
 
 ## Learn More
 
