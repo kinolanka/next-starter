@@ -1,7 +1,13 @@
 {
   "name": "next-starter",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "private": true,
+  "author": "Volodymyr Mashkin",
+  "description": "This is a Next.js starter project bootstrapped with create-next-app.",
+  "repository": "https://github.com/kinolanka/next-starter",
+  "homepage": "https://next-starter.kinolanka.com",
+  "main": "",
+  "license": "ISC",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
