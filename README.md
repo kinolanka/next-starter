@@ -4,6 +4,12 @@ This is a [Next.js](https://nextjs.org/) starter project bootstrapped with [`cre
 
 [https://next-starter.kinolanka.com](https://next-starter.kinolanka.com)
 
+Tests
+
+- [PageSpeed Insights](https://pagespeed.web.dev/report?url=https%3A%2F%2Fnext-starter.kinolanka.com)
+- [WebPageTest](https://www.webpagetest.org/result/220118_BiDc83_8b84448fd51f14f7a8c7d115ec70f32d/)
+- [GTmetrix](https://gtmetrix.com/reports/next-starter.kinolanka.com/KAOk74mF/)
+
 ## Getting Started
 
 Run the commands:
@@ -25,6 +31,7 @@ git add .husky/pre-commit
   - ["src" Directory](https://nextjs.org/docs/advanced-features/src-directory)
   - [Environment Variables](https://nextjs.org/docs/basic-features/environment-variables)
   - [Custom error pages](https://nextjs.org/docs/advanced-features/custom-error-page)
+  - [Security Headers](https://nextjs.org/docs/advanced-features/security-headers)
 - SEO -[next-sitemap](https://github.com/iamvishnusankar/next-sitemap)
 - Code quality tools
   - [husky](https://github.com/typicode/husky)
@@ -55,8 +62,8 @@ git add .husky/pre-commit
 - joi
 - Lighthouse
 - vercel: logs integration
-- security headers
 - microdata
+- Open Graph meta tags (Facebook, Twitter etc.)
 
 ## Environments
 
