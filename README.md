@@ -24,6 +24,7 @@ git add .husky/pre-commit
   - [Absolute imports](https://nextjs.org/docs/advanced-features/module-path-aliases)
   - ["src" Directory](https://nextjs.org/docs/advanced-features/src-directory)
   - [Environment Variables](https://nextjs.org/docs/basic-features/environment-variables)
+  - [Custom error pages](https://nextjs.org/docs/advanced-features/custom-error-page)
 - SEO -[next-sitemap](https://github.com/iamvishnusankar/next-sitemap)
 - Code quality tools
   - [husky](https://github.com/typicode/husky)
