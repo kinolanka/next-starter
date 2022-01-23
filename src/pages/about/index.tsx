@@ -1,10 +1,10 @@
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Container from '@mui/material/Container';
-import Copyright from 'src/utils/Copyright';
-import Link from 'src/utils/Link';
+import Copyright from 'src/components/copyright/Copyright';
+import Link from 'src/components/link/Link';
 import type { NextPage } from 'next';
-import ProTip from 'src/utils/ProTip';
+import ProTip from 'src/components/pro-tip/ProTip';
 import Typography from '@mui/material/Typography';
 
 const About: NextPage = () => {

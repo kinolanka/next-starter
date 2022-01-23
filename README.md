@@ -26,6 +26,7 @@ git add .husky/pre-commit
 - Core
   - [TypeScript](https://github.com/microsoft/TypeScript)
   - [MUI](https://github.com/mui-org/material-ui)
+  - [Redux Toolkit](https://github.com/reduxjs/redux-toolkit)
 - Setup
   - [Absolute imports](https://nextjs.org/docs/advanced-features/module-path-aliases)
   - ["src" Directory](https://nextjs.org/docs/advanced-features/src-directory)
@@ -49,7 +50,6 @@ git add .husky/pre-commit
 
 - REST API
 - css lint
-- Redux Toolkit
 - Redux Persist
 - Mongoose
 - React Hook Form
@@ -64,6 +64,11 @@ git add .husky/pre-commit
 - vercel: logs integration
 - microdata
 - Open Graph meta tags (Facebook, Twitter etc.)
+- GTM
+- Uptime
+- emailing
+- migrate
+- storybook
 
 ## Environments
 
