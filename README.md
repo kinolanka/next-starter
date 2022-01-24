@@ -45,29 +45,39 @@ git add .husky/pre-commit
   - [React Testing Library](https://github.com/testing-library/react-testing-library)
 - Additional packages
   - [clsx](https://github.com/lukeed/clsx)
+  - [lodash](https://github.com/lodash/lodash)
 
 ### Next features
 
-- REST API
-- css lint
 - Redux Persist
+
 - Mongoose
+- migrate
+
 - React Hook Form
-- next-auth
-- googleapis
 - Gooogle Recaptcha
-- lodash
+- emailing
 - axios
-- date-fns
+
+- REST API
 - joi
+
+- css lint
 - Lighthouse
+
+- next-auth
+
+- date-fns
+
 - vercel: logs integration
+
 - microdata
 - Open Graph meta tags (Facebook, Twitter etc.)
+
+- googleapis
 - GTM
 - Uptime
-- emailing
-- migrate
+
 - storybook
 
 ## Environments
