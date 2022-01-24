@@ -1,30 +1,72 @@
 import { Action, ThunkAction, configureStore } from '@reduxjs/toolkit';
+import {
+  FLUSH,
+  PAUSE,
+  PERSIST,
+  PURGE,
+  REGISTER,
+  REHYDRATE,
+  createMigrate,
+  persistReducer,
+  persistStore
+} from 'redux-persist';
 import { TypedUseSelectorHook, useDispatch, useSelector } from 'react-redux';
+import {
+  getPersistedReducersList,
+  getReducers,
+  getTransforms
+} from './helpers';
 
-import counterReducer from './slices/counter';
+import autoMergeLevel2 from 'redux-persist/lib/stateReconciler/autoMergeLevel2';
+// @ts-nocheck
+import { combineReducers } from 'redux';
+import migrations from './migrations';
+import reducersConfig from './reducers';
+import storage from 'redux-persist/lib/storage';
 
-export function makeStore() {
-  return configureStore({
-    reducer: { counter: counterReducer }
-  });
-}
+const STORE_VERSION = 0;
 
-const store = makeStore();
+const persistConfig = {
+  version: STORE_VERSION,
+  key: 'primary',
+  storage,
+  whitelist: getPersistedReducersList(reducersConfig),
+  transforms: getTransforms(reducersConfig),
+  stateReconciler: autoMergeLevel2,
+  migrate: createMigrate(migrations, {
+    debug: process.env.VERCEL_ENV !== 'production'
+  })
+};
 
-export type AppState = ReturnType<typeof store.getState>;
+const reducers = getReducers(reducersConfig);
 
-export type AppDispatch = typeof store.dispatch;
+const combinedReducer = combineReducers(reducers);
 
-export type AppThunk<ReturnType = void> = ThunkAction<
+const persistedReducer = persistReducer(persistConfig, combinedReducer);
+
+export const store = configureStore({
+  reducer: persistedReducer,
+  middleware: getDefaultMiddleware =>
+    getDefaultMiddleware({
+      serializableCheck: {
+        ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER]
+      }
+    })
+});
+
+export const persistor = persistStore(store);
+
+export type AppStateType = ReturnType<typeof store.getState>;
+
+export type AppDispatchType = typeof store.dispatch;
+
+export type AppThunkType<ReturnType = void> = ThunkAction<
   ReturnType,
-  AppState,
+  AppStateType,
   unknown,
   Action<string>
 >;
 
-// Use throughout your app instead of plain `useDispatch` and `useSelector`
-export const useAppDispatch = () => useDispatch<AppDispatch>();
+export const useAppDispatch = () => useDispatch<AppDispatchType>();
 
-export const useAppSelector: TypedUseSelectorHook<AppState> = useSelector;
-
-export default store;
+export const useAppSelector: TypedUseSelectorHook<AppStateType> = useSelector;
