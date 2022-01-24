@@ -4,7 +4,7 @@
 // default config for vercel production deployment
 const config = {
   siteUrl: process.env.SITE_URL, // vercel custom var
-  exclude: ['/500'],
+  exclude: ['/500', '/400'],
   generateRobotsTxt: true,
   robotsTxtOptions: {
     policies: [
