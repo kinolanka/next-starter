@@ -31,6 +31,7 @@
     "lint-staged": "13.1.2",
     "lodash": "4.17.21",
     "next": "13.1.6",
+    "next-seo": "5.15.0",
     "next-sitemap": "3.1.52",
     "react": "18.2.0",
     "react-dom": "18.2.0",

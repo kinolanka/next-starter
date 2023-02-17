@@ -1,12 +1,13 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
+import { NextSeo } from 'next-seo';
 
 const Home: NextPage = () => {
   return (
     <div className="flex min-h-screen flex-col items-center justify-center py-2">
+      <NextSeo title="Next Starter Template" />
       <Head>
-        <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
