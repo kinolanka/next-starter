@@ -35,6 +35,7 @@ cp .env.local.example .env.local
   - [husky](https://github.com/typicode/husky)
   - [lint-staged](https://github.com/okonet/lint-staged)
   - [ESlint](https://github.com/eslint/eslint)
+  - [stylelint](https://github.com/stylelint/stylelint)
   - [TypeScript ESlint](https://github.com/typescript-eslint/typescript-eslint)
   - [Prettier](https://github.com/prettier/prettier)
   - [sorted imports](https://github.com/lydell/eslint-plugin-simple-import-sort)

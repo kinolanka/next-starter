@@ -2,5 +2,6 @@
 
 module.exports = {
   'src/**/*.{js,jsx,ts,tsx}': ['eslint --max-warnings=0'],
-  'src/**/*.{js,jsx,ts,tsx,json,css,scss,md}': ['prettier --write'],
+  'src/**/*.{css,scss}': ['stylelint --max-warnings=0'],
+  'src/**/*.{js,jsx,ts,tsx,json,css,scss,md}': ['prettier --check'],
 };
