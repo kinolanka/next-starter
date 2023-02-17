@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import type { FC } from 'react';
 
 const NotFoundModule: FC = () => {
   return <div>Page not found</div>;

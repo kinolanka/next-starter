@@ -35,6 +35,7 @@ cp .env.local.example .env.local
   - [husky](https://github.com/typicode/husky)
   - [lint-staged](https://github.com/okonet/lint-staged)
   - [ESlint](https://github.com/eslint/eslint)
+  - [TypeScript ESlint](https://github.com/typescript-eslint/typescript-eslint)
   - [Prettier](https://github.com/prettier/prettier)
   - [sorted imports](https://github.com/lydell/eslint-plugin-simple-import-sort)
 - Tests
@@ -44,23 +45,23 @@ cp .env.local.example .env.local
   - [lodash](https://github.com/lodash/lodash)
   - [next-cookies](https://github.com/matthewmueller/next-cookies)
 - Setup
-  - [Absolute imports](https://nextjs.org/docs/advanced-features/module-path-aliases)
-  - ["src" Directory](https://nextjs.org/docs/advanced-features/src-directory)
-  - [Environment Variables](https://nextjs.org/docs/basic-features/environment-variables)
+  - [Absolute imports as @](https://nextjs.org/docs/advanced-features/module-path-aliases)
+  - ["src" directory](https://nextjs.org/docs/advanced-features/src-directory)
+  - [Environment variables](https://nextjs.org/docs/basic-features/environment-variables)
   - [Custom error pages](https://nextjs.org/docs/advanced-features/custom-error-page)
-  - [Security Headers](https://nextjs.org/docs/advanced-features/security-headers)
+  - [Security headers](https://nextjs.org/docs/advanced-features/security-headers)
+  - Differentiate types and modules imports
 
 ### Vercel Deployment
 
 Vercel deployment scripts:
+
 ```bash
 # Install Command
 npm ci --ignore-scripts
 ```
 
 ### Next features
-
-- Differentiate types and modules imports
 
 - Redux Persist
 

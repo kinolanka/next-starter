@@ -48,6 +48,14 @@
           { "blankLine": "any", "prev": ["export", "cjs-export"], "next": ["export", "cjs-export"] }
         ]
       }
+    },
+    {
+      "files": ["*.ts", "*.tsx"],
+      "extends": ["plugin:@typescript-eslint/recommended"],
+      "plugins": ["@typescript-eslint"],
+      "rules": {
+        "@typescript-eslint/consistent-type-imports": "error"
+      }
     }
   ]
 }
