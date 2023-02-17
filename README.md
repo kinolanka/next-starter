@@ -28,12 +28,6 @@ cp .env.local.example .env.local
   - [TypeScript](https://github.com/microsoft/TypeScript)
   - [Tailwind CSS](https://github.com/tailwindlabs/tailwindcss)
   - [Redux Toolkit](https://github.com/reduxjs/redux-toolkit)
-- Setup
-  - [Absolute imports](https://nextjs.org/docs/advanced-features/module-path-aliases)
-  - ["src" Directory](https://nextjs.org/docs/advanced-features/src-directory)
-  - [Environment Variables](https://nextjs.org/docs/basic-features/environment-variables)
-  - [Custom error pages](https://nextjs.org/docs/advanced-features/custom-error-page)
-  - [Security Headers](https://nextjs.org/docs/advanced-features/security-headers)
 - SEO
   - [next-seo](https://github.com/garmeeh/next-seo)
   - [next-sitemap](https://github.com/iamvishnusankar/next-sitemap)
@@ -49,8 +43,16 @@ cp .env.local.example .env.local
   - [clsx](https://github.com/lukeed/clsx)
   - [lodash](https://github.com/lodash/lodash)
   - [next-cookies](https://github.com/matthewmueller/next-cookies)
+- Setup
+  - [Absolute imports](https://nextjs.org/docs/advanced-features/module-path-aliases)
+  - ["src" Directory](https://nextjs.org/docs/advanced-features/src-directory)
+  - [Environment Variables](https://nextjs.org/docs/basic-features/environment-variables)
+  - [Custom error pages](https://nextjs.org/docs/advanced-features/custom-error-page)
+  - [Security Headers](https://nextjs.org/docs/advanced-features/security-headers)
 
 ### Next features
+
+- Differentiate types and modules imports
 
 - Redux Persist
 
