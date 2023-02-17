@@ -13,7 +13,7 @@ const config = {
   changefreq: 'daily',
   priority: 0.7,
   sitemapSize: 100000,
-  exclude: ['/500', '/400'],
+  exclude: ['/500', '/400', '/sitemap.dynamic.xml'],
   generateRobotsTxt: true,
   robotsTxtOptions: {
     policies: [
