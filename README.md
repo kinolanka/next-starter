@@ -50,6 +50,14 @@ cp .env.local.example .env.local
   - [Custom error pages](https://nextjs.org/docs/advanced-features/custom-error-page)
   - [Security Headers](https://nextjs.org/docs/advanced-features/security-headers)
 
+### Vercel Deployment
+
+Vercel deployment scripts:
+```bash
+# Install Command
+npm ci --ignore-scripts
+```
+
 ### Next features
 
 - Differentiate types and modules imports
