@@ -78,7 +78,6 @@ npm ci --ignore-scripts
 - REST API
 - joi
 
-- css lint
 - Lighthouse
 
 - next-auth
