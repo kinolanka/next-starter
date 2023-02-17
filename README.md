@@ -1,116 +1,38 @@
-This is a [Next.js](https://nextjs.org/) starter project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
-## Demo
-
-[https://next-starter.kinolanka.com](https://next-starter.kinolanka.com)
-
-Tests
-
-- [PageSpeed Insights](https://pagespeed.web.dev/report?url=https%3A%2F%2Fnext-starter.kinolanka.com)
-- [WebPageTest](https://www.webpagetest.org/result/220118_BiDc83_8b84448fd51f14f7a8c7d115ec70f32d/)
-- [GTmetrix](https://gtmetrix.com/reports/next-starter.kinolanka.com/KAOk74mF/)
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
 
-Run the commands:
+First, run the development server:
 
 ```bash
-npx create-next-app -e https://github.com/kinolanka/next-starter
-cp .env.local.example .env.local
-npm run prepare
-git add .husky/pre-commit
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
 ```
 
-## Features
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-- Core
-  - [TypeScript](https://github.com/microsoft/TypeScript)
-  - [MUI](https://github.com/mui-org/material-ui)
-  - [Redux Toolkit](https://github.com/reduxjs/redux-toolkit)
-- Setup
-  - [Absolute imports](https://nextjs.org/docs/advanced-features/module-path-aliases)
-  - ["src" Directory](https://nextjs.org/docs/advanced-features/src-directory)
-  - [Environment Variables](https://nextjs.org/docs/basic-features/environment-variables)
-  - [Custom error pages](https://nextjs.org/docs/advanced-features/custom-error-page)
-  - [Security Headers](https://nextjs.org/docs/advanced-features/security-headers)
-- SEO -[next-sitemap](https://github.com/iamvishnusankar/next-sitemap)
-- Code quality tools
-  - [husky](https://github.com/typicode/husky)
-  - [lint-staged](https://github.com/okonet/lint-staged)
-  - [ESlint](https://github.com/eslint/eslint)
-  - [Prettier](https://github.com/prettier/prettier)
-  - [import-sort](https://github.com/renke/import-sort)
-- Tests
-  - [Jest](https://github.com/facebook/jest)
-  - [React Testing Library](https://github.com/testing-library/react-testing-library)
-- Additional packages
-  - [clsx](https://github.com/lukeed/clsx)
-  - [lodash](https://github.com/lodash/lodash)
+You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
 
-### Next features
+[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
 
-- Redux Persist
+The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-- Mongoose
-- migrate
-
-- React Hook Form
-- Gooogle Recaptcha
-- emailing
-- axios
-
-- REST API
-- joi
-
-- css lint
-- Lighthouse
-
-- next-auth
-
-- date-fns
-
-- vercel: logs integration
-
-- microdata
-- Open Graph meta tags (Facebook, Twitter etc.)
-
-- googleapis
-- GTM
-- Uptime
-
-- storybook
-
-## Environments
-
-- Localhost
-  - **production** - `next build`
-  - **development** - `next dev`
-- Vercel
-  - **production** - production brunch
-  - **preview** - not production branches
-
-(!) Set all environment variables for Vercel in Vercel project settings and for localhost in env.local
-
-### Docs
-
-[Next.js Environment Variables](https://nextjs.org/docs/basic-features/environment-variables)
-
-[Vercel System Environment Variables](https://vercel.com/docs/concepts/projects/environment-variables#system-environment-variables)
-
-## Deployment
-
-This starter template is configured for Vercel.
-
-### Setup
-
-- Add custom domain for **production** branch
-- Set SITE_URL variable for **production** environment
-- Check that [system environment variables](https://vercel.com/kinolanka/next-starter/settings/environment-variables#:~:text=Automatically%20expose,System%20Environment%20Variables) are automatically exposed
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
 
-- [https://nextjs.org/docs](https://nextjs.org/docs)
-- [https://github.com/vercel/next.js/tree/canary/examples](https://github.com/vercel/next.js/tree/canary/examples)
-- [https://vercel.com/docs](https://vercel.com/docs)
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
