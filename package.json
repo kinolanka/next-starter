@@ -1,15 +1,20 @@
 {
-  "name": "my-places",
-  "version": "0.1.0",
+  "name": "next-starter",
+  "version": "0.0.0",
   "private": true,
+  "author": "Volodymyr Mashkin",
+  "description": "This is a Next.js starter project bootstrapped with create-next-app.",
+  "repository": "https://github.com/kinolanka/next-starter",
+  "license": "ISC",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint --fix",
     "prettier": "prettier --write .",
+    "lint-staged": "lint-staged",
     "postinstall": "husky install; chmod +x .husky/pre-commit; git add .husky/pre-commit",
-    "lint-staged": "lint-staged"
+    "postbuild": "next-sitemap"
   },
   "dependencies": {
     "@next/font": "13.1.6",
@@ -17,6 +22,7 @@
     "@types/react": "18.0.28",
     "@types/react-dom": "18.0.11",
     "clsx": "1.2.1",
+    "cookies-next": "2.1.1",
     "eslint": "8.34.0",
     "eslint-config-next": "13.1.6",
     "eslint-config-prettier": "8.6.0",
@@ -25,6 +31,7 @@
     "lint-staged": "13.1.2",
     "lodash": "4.17.21",
     "next": "13.1.6",
+    "next-sitemap": "3.1.52",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "typescript": "4.9.5"
