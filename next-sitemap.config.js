@@ -3,6 +3,8 @@
 // https://github.com/iamvishnusankar/next-sitemap#configuration-options
 // https://vercel.com/docs/concepts/deployments/environments#preview
 
+const serverEnv = process.env.VERCEL_ENV || 'development';
+
 // default config for vercel production deployment
 const config = {
   siteUrl: process.env.NEXT_PUBLIC_SITE_URL,
