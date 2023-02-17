@@ -52,6 +52,8 @@ cp .env.local.example .env.local
   - [Custom error pages](https://nextjs.org/docs/advanced-features/custom-error-page)
   - [Security headers](https://nextjs.org/docs/advanced-features/security-headers)
   - Differentiate types and modules imports
+  - App config
+  - Google Tag Manager
 
 ### Vercel Deployment
 

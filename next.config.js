@@ -1,6 +1,32 @@
 /** @type {import('next').NextConfig} */
+
+// production, preview, development
+const serverEnv = process.env.NEXT_PUBLIC_VERCEL_ENV || 'development';
+
+const env = (config, def) => {
+  return config[serverEnv] || def;
+};
+
 const nextConfig = {
   reactStrictMode: true,
+
+  publicRuntimeConfig: {
+    serverEnv,
+    siteUrl: process.env.NEXT_PUBLIC_SITE_URL,
+    siteTitle: 'Next Starter Template',
+    googleTagManagerId: '',
+    googleTagManagerEnv: env(
+      {
+        // production should be empty
+        production: '',
+        preview: '&gtm_auth=****&gtm_cookies_win=x',
+      },
+      '&gtm_auth****&gtm_cookies_win=x'
+    ),
+  },
+
+  serverRuntimeConfig: {},
+
   async headers() {
     return [
       {
