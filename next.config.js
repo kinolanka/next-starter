@@ -4,7 +4,7 @@
 const serverEnv = process.env.NEXT_PUBLIC_VERCEL_ENV || 'development';
 
 const env = (config, def) => {
-  return config[serverEnv] || def;
+  return config?.hasOwnProperty(serverEnv) ? config[serverEnv] : def;
 };
 
 const nextConfig = {
