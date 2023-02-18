@@ -19,7 +19,7 @@
     "prettier": "prettier --check .",
     "prettier:fix": "prettier --write .",
     "lint-staged": "lint-staged",
-    "postinstall": "husky install; chmod +x .husky/pre-commit; git add .husky/pre-commit",
+    "setup": "chmod -R +x ./bin && ./bin/setup.sh",
     "postbuild": "next-sitemap"
   },
   "dependencies": {

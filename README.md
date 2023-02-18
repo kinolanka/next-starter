@@ -19,7 +19,7 @@ npx create-next-app -e https://github.com/kinolanka/next-starter
 
 cd <project-name>
 
-cp .env.local.example .env.local
+npm run setup
 ```
 
 ## Features
