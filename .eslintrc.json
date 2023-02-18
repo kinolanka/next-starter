@@ -24,7 +24,7 @@
                 "^@?\\w" // other packages,
               ],
               // shared code
-              // ["^(@prefix)(/.*|$)"],
+              ["^(@)(/.*|$)"],
               // project code
               ["^(src)(/.*|$)"],
               // public imports
