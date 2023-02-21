@@ -32,15 +32,15 @@ npm run setup
   - [next-seo](https://github.com/garmeeh/next-seo)
   - [next-sitemap](https://github.com/iamvishnusankar/next-sitemap)
 - Code quality tools
+  - [ESlint](https://github.com/eslint/eslint)
+  - [TypeScript ESlint](https://github.com/typescript-eslint/typescript-eslint)
+  - [stylelint](https://github.com/stylelint/stylelint)
+  - [Prettier](https://github.com/prettier/prettier)
   - [husky](https://github.com/typicode/husky)
   - [lint-staged](https://github.com/okonet/lint-staged)
-  - [ESlint](https://github.com/eslint/eslint)
-  - [stylelint](https://github.com/stylelint/stylelint)
-  - [TypeScript ESlint](https://github.com/typescript-eslint/typescript-eslint)
-  - [Prettier](https://github.com/prettier/prettier)
-  - [sorted imports](https://github.com/lydell/eslint-plugin-simple-import-sort)
 - Tests
   - [Jest](https://github.com/facebook/jest)
+  - [Testing Library](https://testing-library.com)
 - Additional packages
   - [clsx](https://github.com/lukeed/clsx)
   - [lodash](https://github.com/lodash/lodash)
@@ -51,6 +51,7 @@ npm run setup
   - [Environment variables](https://nextjs.org/docs/basic-features/environment-variables)
   - [Custom error pages](https://nextjs.org/docs/advanced-features/custom-error-page)
   - [Security headers](https://nextjs.org/docs/advanced-features/security-headers)
+  - [sorted imports](https://github.com/lydell/eslint-plugin-simple-import-sort)
   - Differentiate types and modules imports
   - App config
   - Google Tag Manager
@@ -65,6 +66,8 @@ npm ci --ignore-scripts
 ```
 
 ### Next features
+
+- withSecurityHeaders next-plugin
 
 - Redux Persist
 
