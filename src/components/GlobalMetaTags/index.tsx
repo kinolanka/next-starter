@@ -14,7 +14,8 @@ const GlobalMetaTags: FC = () => {
   return (
     <>
       <DefaultSeo
-        title={publicConfig.siteTitle}
+        titleTemplate={`%s | ${publicConfig.siteTitle}`}
+        defaultTitle={publicConfig.siteTitle}
         canonical={currentUrl}
         openGraph={{
           type: 'website',

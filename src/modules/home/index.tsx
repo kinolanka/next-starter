@@ -1,12 +1,10 @@
 import type { FC } from 'react';
 import { NextSeo } from 'next-seo';
 
-import { publicConfig } from '@/utils/config';
-
 const HomeModule: FC = () => {
   return (
     <>
-      <NextSeo title={publicConfig.siteTitle} />
+      <NextSeo title="Home Page" />
       <h1 className="text-6xl font-bold">
         Welcome to{' '}
         <a className="text-blue-600" href="https://nextjs.org">
