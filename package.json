@@ -23,7 +23,6 @@
     "postbuild": "next-sitemap"
   },
   "dependencies": {
-    "@next/font": "13.4.4",
     "clsx": "1.2.1",
     "cookies-next": "2.1.1",
     "lodash": "4.17.21",
