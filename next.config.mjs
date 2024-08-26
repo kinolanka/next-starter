@@ -1,31 +1,15 @@
 /** @type {import('next').NextConfig} */
-
-// production, preview, development
-const serverEnv = process.env.NEXT_PUBLIC_VERCEL_ENV || 'development';
-
-const env = (config, def) => {
-  return config?.hasOwnProperty(serverEnv) ? config[serverEnv] : def;
-};
-
 const nextConfig = {
-  reactStrictMode: true,
-
-  publicRuntimeConfig: {
-    serverEnv,
-    siteUrl: process.env.NEXT_PUBLIC_SITE_URL,
-    siteTitle: 'Next Starter Template',
-    googleTagManagerId: '',
-    googleTagManagerEnv: env(
-      {
-        // production should be empty
-        production: '',
-        preview: '&gtm_auth=****&gtm_cookies_win=x',
-      },
-      '&gtm_auth****&gtm_cookies_win=x'
-    ),
-  },
-
-  serverRuntimeConfig: {},
+  // https://nextjs.org/docs/api-reference/next.config.js/redirects
+  //   async redirects() {
+  //     return [
+  //         {
+  //           source: '/source-page',
+  //           destination: '/target-page',
+  //           permanent: true,
+  //         },
+  //     ];
+  //   },
 
   async headers() {
     return [
@@ -74,4 +58,4 @@ const nextConfig = {
   },
 };
 
-module.exports = nextConfig;
+export default nextConfig;

@@ -1,0 +1,26 @@
+# https://github.com/kinolanka/webdevawesome/actions/workflows/deploy-to-vercel.yml
+name: Deploy to Vercel
+on: 'workflow_dispatch'
+env:
+  VERCEL_TOKEN: ${{secrets.VERCEL_TOKEN}}
+  VERCEL_ORG_ID: ${{vars.VERCEL_ORG_ID}}
+  VERCEL_PROJECT_ID: ${{vars.PROJECT_ID}}
+defaults:
+  run:
+    shell: bash
+    working-directory: ./
+jobs:
+  Deploy-To-Vercel:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Setup nodejs
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20.x
+      - name: List files
+        run: ls -lhaG
+      - name: Deploy
+        run: npx vercel --debug --token $VERCEL_TOKEN --prod
+      - run: echo "This job's status is ${{ job.status }}."
