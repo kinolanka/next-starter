@@ -28,8 +28,8 @@
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
-    "@kinolanka/eslint-config-next": "github:kinolanka/eslint-config-next#v1.0.0",
-    "@kinolanka/prettier-config": "github:kinolanka/prettier-config#v1.0.0",
+    "@kinolanka/eslint-config-next": "^1.0.1",
+    "@kinolanka/prettier-config": "^1.1.0",
     "@types/lodash": "^4.17.7",
     "@types/node": "^20",
     "@types/react": "^18",
